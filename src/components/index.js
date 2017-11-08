@@ -1,3 +1,3 @@
 import Header from './Header';
-
-export {Header};
+import Chart from './Chart'
+export {Header, Chart};

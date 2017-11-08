@@ -18,25 +18,26 @@ export default class Header extends Component {
       isOpen: !this.state.isOpen
     });
   }
+  
   render() {
     return (
       <div className="fixed">
-        <Navbar color="faded" light expand="md" fixed={'top'}>
+        <Navbar color="faded" light expand="md">
           <NavbarBrand href="/">RAN CHAT</NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink href="/components/">랜덤채팅하기</NavLink>
+                <NavLink href="/Chat">랜덤채팅하기</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">내정보</NavLink>
+                <NavLink href="/Profile">내정보</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/components/">로그아웃</NavLink>
+                <NavLink href="/">로그인</NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="https://github.com/reactstrap/reactstrap">Github</NavLink>
+                <NavLink href="https://github.com/reactstrap/reactstrap">커뮤니티</NavLink>
               </NavItem>
             </Nav>
           </Collapse>
